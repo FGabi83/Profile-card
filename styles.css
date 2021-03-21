@@ -49,43 +49,6 @@ table {
     border-spacing: 0;
 }
 
-/*==HELPING COLORS==*/
-
-/*.profile-card {
-  /*blue*/
-  background-color: rgba(134, 133, 223, 0.6);
-}*/
-
-/*.head {
-  /*purple*/
-  background-color: rgba(207, 122, 207, 0.6);
-}*/
-
-.profile-image {
-  /*red*/
-  background-color: rgba(239, 141, 145, 0.6);
-}
-
-/*.name-headline {
-  /*yellow*/
-  background-color: rgba(239, 236, 134, 0.6);
-}*/
-
-/*.content {
-  /*green*/
-  background-color: rgba(143, 228, 145, 0.6);
-}*/
-
-/*.about{
-    /*red*/
-  background-color: rgba(239, 141, 145, 0.6);
-}*/
-
-.links {
-  /*grey*/
- /* background-color: rgba(83, 85, 87, 0.6);*/
-}
-
 /*==BASIC LAYOUT==*/
 
 * {
@@ -98,7 +61,6 @@ table {
   height: calc(100vh - 20px);
   /*margin: auto;*/
   position: relative;
-  
 }
 
 /*header*/
@@ -108,26 +70,24 @@ table {
   width: 100vw;
   position: absolute;
   top:0;
-  
-  
- }
+}
 
 .name-headline {
-height: 86%;
-width: 75%;
+height: 33vw;
+width: 62vw;
 position: absolute;
 top: 2vh;
-left: 0;
-margin-left: 2.5vw;
+left: 2.5vw ;
 }
 
 .profile-image {
-  height: 86%;
-  width: 42.66%;
+  height: 33vw;
+  width: 33vw;
   position: absolute;
   right: 2.5vw;
   top: 2vh;
-  }
+  border-radius: 0 50% 50% 0;
+}
 
 img {
   height: 100%;
@@ -142,30 +102,25 @@ img {
 .content {
   position: absolute;
   top:28vh;
-  width: 95%;
-  margin-left: 2.5vw;
-  height: 65vh;
+  width: 100vw;
+  height: 115.55vw;
 }
 
 .about {
   position: absolute;
   top: 0;
-  width: 100%;
+  left: 2.5vw;
+  width: 95%;
   height: 60%;
 }
 
 .links {
   position: absolute;
   top:60%;
-  width: 100%;
+  left: 2.5vw;
+  width: 95%;
   height:auto; 
 }
-
-/*.contact-icon {
-  position: relative;
-  top: -3vh;
-}*/
-
 
 /*==BASIC STYLES==*/
 
@@ -177,8 +132,8 @@ img {
   background-size: cover;
 }
 
-.name-headline {
-  background-color: rgba(255,255,255,.3);
+.name-headline, .profile-image {
+ background-color: rgba(255,255,255,.3);
 }
 
 .name-headline {
@@ -200,20 +155,19 @@ img {
 
 h1, h2 {
   font-family: 'Nunito', sans-serif;
-  
 }
 
 h1 {
-  font-size: 1.5rem;
-  padding-bottom: .5rem;
+  font-size: 5.86vw;
+  padding-bottom: 1.95vw;;
 }
 
 h2 {
-  font-size: 1.08rem;
+  font-size: 4.22vw;
 }
 
 #first-h2 {
-  margin-bottom: .8rem;
+  margin-bottom: 3.124vw;
 }
 
 p, span {
@@ -221,25 +175,24 @@ p, span {
 }
 
 span {
-  font-size: .9rem;
+  font-size: 3.52vw;
   display: inline-block;
-  margin-bottom: 0.5rem; 
+  margin-bottom: 1.95vw; 
 }
 
 .fa-map-marker {
-  font-size: 1.2rem !important;
+  font-size: 4.69vw !important;
   color: rgb(25,25,25);
 }
 
 p {
-  font-size: 1rem;
+  font-size: 3.9vw;
 }
 
-
 .about {
-  padding: 1.2rem;
-  line-height: 1.3rem;
-  font-size: 2.5vh;
+  padding: 1rem;
+  line-height: 5.77vw;
+  font-size: 4.44vw;
   text-align: justify;
 }
 
@@ -250,13 +203,13 @@ em {
 .links {
   text-align: center;
   text-transform: uppercase;
-  font-size: 2.5vh;
+  font-size: 4.44vw;
   padding:.8rem; 
 }
 
 #contact-me {
   color: rgba(255,255,255,.7);
-  margin-bottom: .4rem;
+  margin-bottom: 1.77vw;
 }
 
 li {
@@ -270,7 +223,6 @@ li {
 
 img {
   transition-duration: 1.5s;
-  
 }
 
 img:hover {
@@ -304,212 +256,173 @@ a:hover {
 }
 
 /*==SCREEN ADJUSTEMENT==*/
+@media (min-width: 540px) {
+.name-headline {
+  height: 25vw;
+  width: 70vw;
+ }
 
-@media (max-width: 280px) {
-  .profile-image {
-    height: 60%;
-    top: 5vh;
+.profile-image {
+  height: 25vw;
+  width: 25vw;
+ }
+
+ h1 {
+  font-size: 4.395vw;
+  padding-bottom: 1.4625vw;;
+ }
+
+h2 {
+  font-size: 3.165vw;
+ }
+
+#first-h2 {
+  margin-bottom: 2.343vw;
+ }
+
+span {
+  font-size: 2.64vw;
+  margin-bottom: 1.4625vw; 
+ }
+
+.fa-map-marker {
+  font-size: 3.52vw !important;
+  color: rgb(25,25,25);
+ }
+
+p {
+  font-size: 2.925vw;
+ }
+
+.about {
+  line-height: 4.33vw;
+  font-size: 3.33vw;
+  height: 35%;;
+ }
+ 
+  .links {
+    top: 35%;
   }
-  
-  .name-headline {
-    height: 60%;
-    top: 5vh;
-  }
-  
-  h1 {
-    font-size: 1rem;
-  }
+
 }
-
-@media (max-width: 320px) {
-  
-  h1 {
-    font-size: 1.3rem;
-  }
-  
-  h2 {
-    font-size: .9rem;
-  }
-  
-  #first-h2 {
-  margin-bottom: .8rem;
-  }
-  
-  span {
-    display: inline-block;
-    margin-bottom: 0.4rem;
-    font-size: .7rem;
-  }
-  
-  p {
-    font-size: .8rem;
-  }
-  
-  .about {
-    line-height: 1.1rem;
-  }
-}
-  
-  
-  @media (max-width: 320px) and (min-height: 653px) {
-    h1 {
-      margin-bottom: .5rem;
-    }
-    
-    #first-h2 {
-      margin-bottom: .5rem;
-    }
-    
-    span {
-      font-size: .8rem;
-    }
-    .about {
-    font-size: .9rem;
-    line-height: 1rem;
-    }
-  }
-
-@media (min-width: 375px) and (min-height: 812px){
-  .name-headline {
-    width: 70%;
-    padding-right: 21%;
-    text-align: left;
-    }
-  h1 {
-    font-size: 1.4rem;
-  } 
-  
-  h2 {
-    font-size: 1.3rem;
-  }
-  
-  p {
-    font-size: 1.1rem;
-  }
-  
-  .about {
-    font-size: 1.2rem;
-    line-height: 1.4rem;
-  }
-}
-
 
 @media (min-width: 768px) {
   .name-headline {
-    width: 80%;
-    padding: 2rem;
+   height: 20vw;
+   width: 50vw;
+   left: 15vw;
+   top: 7vh;
+  }
+      
+  span {
+    padding-right: 1rem;
   }
   
-  h1 {
-    font-size: 3rem;
+  p {
+    display: inline-block;
+  }
+
+  .profile-image {
+   height: 20vw;
+   width: 20vw;
+   right:15vw;
+   top: 7vh;
   }
   
-  h2 {
-    font-size: 2rem;
-  }
-  .about{
-    width: 75%;
+  .about {
+    width: 60vw;
+    left: 18vw;
+    top: 2.6vw;
+    line-height: 4.32vw;
     height: auto;
-    left: 0;
-    font-size: 1.7rem;
-    line-height: 2.3rem;
   }
   
   .links {
-    width: 25%;
-    right: 0;
-    top: 0;
-  }
-  
-  li {
-    display: block;
-    padding-bottom: 1rem;
+    top: 65vw;
+    left: 18vw;
+    width: 60vw;
+    height: 15vh;
   }
   
   #contact-me {
-    padding-bottom: 1rem;
-    color: rgb(25,25,25);
+    font-size: 4vw;
   }
-  
-  .fa-twitter-square {
-    color: rgba(25,25,25,.7);
-  }
-  
-  .fa-twitter-square:hover {
-    color: rgba(25,25,25,1);
+      
+  .fa-twitter-square, .fa-behance-square, .fa-instagram {
+    font-size: 3rem !important;
   }
 }
 
 @media (min-width: 1025px){
+  
+
   .name-headline {
-   width: 35%;
-   height: 24.08vh;
-   left: 13.5%;
-   padding: 1rem;
-  } 
-  
-  /*name-headline font*/
-  
-  h1 {
-    font-size: 2.5rem;
-    
-  }
-  
-  h2 {
-    font-size: 1.8rem;
-  }
-  
-  #first-h2 {
-    margin-bottom: .2rem;
-    
-  }
-  
-  p {
-    font-size: 1.5rem;
-}
-  
+    height: 19.43vh;
+    width: 30%;
+    top: 2vh;
+    left: 25% ;
+   }
+
   .profile-image {
-    width: 24.08vh;
-    right:43%;
-      }
+    height: 19.43vh;
+    width: 19.43vh;
+    left:55% ;
+    top: 2vh;
+  }
   
   .links {
-    background-color: rgba(255,255,255,.3);
-    border-radius: (0 0.125 0.125 0);
-    top: -26vh;
-    right: 13.5%;
-    width: 35%;
-    height: 24.08vh;
-    padding: 1rem;
-    
+    top:0vh;
+    left: 55%;
+    width: 10%;
   }
-  
-  #contact-me {
-    margin-top: 1.5rem;
-    font-family: 'Nunito', sans-serif;
-    color:rgb(25,25,25);
-  }
-  
-  /*contact icons*/
   
   li {
-    display: inline;
+    display: block;
+  }
+   
+  h1 {
+    font-size: 4vh;
+    padding-bottom: .5vh;
+  }
+
+  h2 {
+    font-size: 3.5vh;
+  }
+
+  #first-h2 {
+    margin-bottom: 1vh;
+  }
+
+  span {
+    font-size: 2.5vh;
+    margin-bottom: .5vh; 
+  }
+
+  .fa-map-marker {
+    font-size: 3.5vh !important;
+    color: rgb(25,25,25);
+  }
+
+  p {
+    font-size: 3vh;
+  }
+
+  #contact-me {
+    font-size: 4vh;
+    margin-bottom: 2vh;
+    color: rgb(25,25,25)
   }
   
   .fa-twitter-square, .fa-behance-square, .fa-instagram {
-  color: rgba(25,25,25,.7);
-}
+    font-size: 5vh !important;
+  }
 
-.fa-twitter-square:hover, .fa-behance-square:hover, .fa-instagram:hover {
-  color: rgba(25,25,25,1);
-  transform: scale(1.1);
-}
   
-  .about{
-    width: 72.7%;
-    left: 14%;
-    font-size: 1.5rem;
-    
+
+  .about {
+    width: 30%;
+    left: 25%;
+    line-height: 3.5vh;
+    font-size: 3vh;
   }
 }
-
